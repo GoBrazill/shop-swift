@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
-import { Image, StyleSheet, Text, View, Button, TextInput, Pressable, TouchableOpacity} from 'react-native';
+import { Image, StyleSheet, Text, View, Button, TextInput, Pressable, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import illustration from '../assets/android-icon-foreground.png'
 import { Card } from './components/Card';
 import { Login } from './screens/Login';
+import { SignUp } from './screens/sign-up';
 
 export default function App() {
 
@@ -16,28 +17,29 @@ export default function App() {
       <View>
         {/* <Pressable onPress={() => {alert('você clicou no meu botão')}}>
           <Text>texto do meu botão</Text>
-        </Pressable>
-
-        <Pressable onPress={{ mandaSalve }}>
+          </Pressable>
+          
+          <Pressable onPress={{ mandaSalve }}>
           <Text>Manda Salve</Text>
-        </Pressable>
-        
-        <Pressable onPress={() => {alert('WOW!')}}>
+          </Pressable>
+          
+          <Pressable onPress={() => {alert('WOW!')}}>
           <Text>UAU?</Text>
-        </Pressable>
-
-        <TouchableOpacity onPress={ mandaSalve }>
+          </Pressable>
+          
+          <TouchableOpacity onPress={ mandaSalve }>
           <Text>Salve dnv</Text>
-        </TouchableOpacity>
-        
-        <TouchableOpacity onPress={() => {alert('Apertado')} }>
+          </TouchableOpacity>
+          
+          <TouchableOpacity onPress={() => {alert('Apertado')} }>
           <Text>Aperta</Text>
-        </TouchableOpacity>
-        
-        <TouchableOpacity onPress={() => {} }>
+          </TouchableOpacity>
+          
+          <TouchableOpacity onPress={() => {} }>
           <Text>clique aqui</Text>
-        </TouchableOpacity> */}
-        <Login></Login>
+          </TouchableOpacity> */}
+        {/* <Login></Login> */}
+        <SignUp></SignUp>
       </View>
     </SafeAreaView>
   );
