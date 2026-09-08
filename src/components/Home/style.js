@@ -20,20 +20,30 @@ export const TextHighlight = styled.Text`
 
 export const Scroll = styled.ScrollView.attrs({
     contentContainerStyle: {
-    gap: 20
+        gap: 20
     }
 })``
 
 export const CategoriesSecion = styled.View`
     gap: 18px;
+    margin-bottom: 12px;
 `
 
 export const ScrollCategories = styled.ScrollView.attrs({
     contentContainerStyle: {
+        flexDirection: 'row',
         gap: 8
     }
 })``
 
-export const CaategorieCard = styled.View`
+
+export const ProductsSection = styled.View`
     gap: 8px;
 `
+
+export const ProductsGrid = styled.View`
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 20px;
+`
+
